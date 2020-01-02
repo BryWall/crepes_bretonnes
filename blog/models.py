@@ -10,7 +10,7 @@ class Categorie(models.Model):
 
 class Article(models.Model):
     titre = models.CharField(max_length=100)
-    slug = models.SlugField(max_length=100, default=None)
+    slug = models.SlugField(max_length=100)
     auteur = models.CharField(max_length=42)
     contenu = models.TextField(null=True)
     date = models.DateTimeField(default=timezone.now,
